@@ -14,6 +14,7 @@ const NoteSchema = new Schema({
   priority: {
     type: String,
     require: true,
+    enum: ["HIGH", "MEDIUM", "LOW"],
   },
   dateAdded: {
     type: Date,
